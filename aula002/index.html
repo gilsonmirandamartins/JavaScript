@@ -7,12 +7,14 @@
     <title>Manipulando dados</title>
 </head>
 <body>
-    <h1>Titulo</h1>
+    <h1>Titulo agora foi</h1>
+    <p>Aprendendo a usar o DOM</p>
+    <p>Primeiro contato com o DOM</p>
+    <div>Clique em mim</div>
+
     <script>
-        var n1 = Number(window.prompt('Digite um numero'))
-        var n2 = Number(window.prompt('Digite outro numero'))
-        var soma = n1 + n2
-        window.alert('A soma dos dois é ' + soma)
+        var cd = window.document.querySelector('div')
+        cd.style.color = 'blue'
     </script>
 </body>
 </html>
