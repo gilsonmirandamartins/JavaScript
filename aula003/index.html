@@ -6,15 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo01.css">
     <title>Entendendo o DOM</title>
+    <style>
+        div.msg2{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: green;
+            color: white;
+            font-size: 25px;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Inciniando os estudos de DOM</h1>
-    <p class="p1">Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>Dom</strong> no JavaScript</p>
-    <div class="msg1">Clique em mim</div>
+    <!--Eventos DOM-->
+    <div class="msg2" onclick="clicar()">
+        Interaja...
+    </div>
     <script>
-        var par = window.document.getElementsByTagName('p')[0]
-        par.style.color = 'blue'
+        function clicar(){
+            var d1 = document.querySelector('div.msg2')
+            d1.innerHTML = 'Cliquei'
+        }
     </script>
 </body>
 </html>
